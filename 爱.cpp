@@ -10,16 +10,16 @@ void ColorEnable()
 				system("color 01");
 				break;
 			case 2:
-				system("color 12");
+				system("color 02");
 				break;
 			case 3:
-				system("color 34");
+				system("color 04");
 				break;
 			case 4:
-				system("color 4F");
+				system("color 0F");
 				break;
 			default:
-				system("color 4A");
+				system("color 0A");
 				tmp = 0;
 				break;
 		}
@@ -60,6 +60,7 @@ int main()
 		
 	}
 	printf("          我爱你!\n"); 
+	system("color 04");
 	system("pause");
 	return 0;
 }
