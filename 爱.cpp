@@ -39,9 +39,9 @@ int main()
 			printf("*");
 		}
 		printf("\n");
-		Sleep(1000);
 		tmp++;
 		ColorEnable();
+		Sleep(1000);
 	}
 	
 	for(i = 0; i < 7; i++)
