@@ -40,6 +40,7 @@ int main()
 		}
 		printf("\n");
 		Sleep(1000);
+		tmp++;
 		ColorEnable();
 	}
 	
