@@ -57,7 +57,7 @@ int main()
 		Sleep(1000);
 		
 	}
-	printf("           ÎÒ°®Äã!\n"); 
+	printf("          æˆ‘çˆ±ä½ !\n"); 
 	system("pause");
 	return 0;
 }
