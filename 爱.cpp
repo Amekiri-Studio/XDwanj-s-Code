@@ -14,6 +14,7 @@ void ColorEnable()
 				break;
 			case 3:
 				system("color 34");
+				break;
 			case 4:
 				system("color 4F");
 				break;
