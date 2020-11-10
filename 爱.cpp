@@ -29,8 +29,13 @@ int main()
 	int i, j;
 	
 	printf("      ****         ****\n");
+	system("color 01");
+	Sleep(1000);
 	printf("   *********     *********\n");
+	system("color 04");
+	Sleep(1000);
 	printf("*************   *************\n");
+	Sleep(1000);
 	
 	for(i = 0; i < 3; i++)
 	{
