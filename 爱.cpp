@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <windows.h>
 static int tmp;
-void ColorEnable(){
+void ColorEnable()
+{
 	switch(tmp)
 		{
 			case 1:
