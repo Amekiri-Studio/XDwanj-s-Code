@@ -38,7 +38,7 @@ int main()//主函数
 		}
 		//from Amekiri
 		char ct;
-		printf("\n您是否还要继续？(Y/N)");
+		printf("\n您是否还要继续？(Y/N)：");
 		rewind(stdin);
 		ct = getchar();
 		if(ct == 'y' || ct == 'Y');
