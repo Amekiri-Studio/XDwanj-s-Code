@@ -1,40 +1,47 @@
 #include <stdio.h>
 
-int swap(int &i, int &j)//¶ÔÁ½¸öÊı½øĞĞ½»»»Î»ÖÃµÄº¯Êı 
+int swap(int &i, int &j)//å¯¹ä¸¤ä¸ªæ•°è¿›è¡Œäº¤æ¢ä½ç½®çš„å‡½æ•° 
 {
-	int t;//½»»»²ÎÊı 
+	int t;//äº¤æ¢å‚æ•° 
 	
 	t = i;
 	i = j;
 	j = t;
 }
 
-int main()//Ö÷º¯Êı 
+int main()//ä¸»å‡½æ•° 
 {
 	do{
-		int a[10];//¶Ô10¸öÊı½øĞĞ¶¨Òå 
+		int a[10];//å¯¹10ä¸ªæ•°è¿›è¡Œå®šä¹‰ 
 		int i, j;
 		int num;
 		
-		printf("ÄúÏëÊäÈë¶àÉÙ¸öÊıÖµ:");
+		printf("æ‚¨æƒ³è¾“å…¥å¤šå°‘ä¸ªæ•°å€¼:");
 		scanf("%d", &num);
 		
-		printf("ÇëÊäÈë%d¸öÊı²¢ÓÃ¿Õ¸ñ¸ô¿ª£º", num);
-		for(i=0; i<num; i++)//¸´ÔÓ°æµÄscanf	XD 
+		printf("è¯·è¾“å…¥%dä¸ªæ•°å¹¶ç”¨ç©ºæ ¼éš”å¼€ï¼š", num);
+		for(i=0; i<num; i++)//å¤æ‚ç‰ˆçš„scanf	XD 
 		{
 			scanf("%d",&a[i]);
 		}		
 	
-		for(i=0; i<num; i++)//½øĞĞÃ°ÅİÅÅĞòµÄ»ùÊı 
-			for(j=0; j<(num - 1); j++)//¶ÔÅĞ¶Ï½»»»µÄ±äÁ¿½øĞĞ"ÏòÓÒÆ½ÒÆ" 
-				if(a[j] > a[j+1])//ÅĞ¶Ï 
-					swap(a[j], a[j+1]);//½»»» 
+		for(i=0; i<num; i++)//è¿›è¡Œå†’æ³¡æ’åºçš„åŸºæ•° 
+			for(j=0; j<(num - 1); j++)//å¯¹åˆ¤æ–­äº¤æ¢çš„å˜é‡è¿›è¡Œ"å‘å³å¹³ç§»" 
+				if(a[j] > a[j+1])//åˆ¤æ–­ 
+					swap(a[j], a[j+1]);//äº¤æ¢ 
 		
 	
-		for(i=0; i<num; i++)//¸´ÔÓ°æprintf	   XD 
+		for(i=0; i<num; i++)//å¤æ‚ç‰ˆprintf	   XD 
 		{
 			printf("%d ",a[i]);
 		}
+		//from Amekiri
+		char ct;
+		printf("\næ‚¨æ˜¯å¦è¿˜è¦ç»§ç»­ï¼Ÿ(Y/N)");
+		ct = getchar();
+		if(ct == 'y' || ct == 'Y');
+		else if(ct == 'n' || ct == 'N')
+			break;
 	}while(1);
 	return 0;				 
 } 
