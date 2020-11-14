@@ -11,7 +11,8 @@ int swap(int &i, int &j)//对两个数进行交换位置的函数
 
 int main()//主函数 
 {
-	do{
+	do
+	{
 		int i, j;
 		int num;
 		
