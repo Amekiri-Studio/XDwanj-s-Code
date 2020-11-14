@@ -12,12 +12,13 @@ int swap(int &i, int &j)//对两个数进行交换位置的函数
 int main()//主函数 
 {
 	do{
-		int a[10];//对10个数进行定义 
 		int i, j;
 		int num;
 		
 		printf("您想输入多少个数值:");
 		scanf("%d", &num);
+		
+		int a[num];
 		
 		printf("请输入%d个数并用空格隔开：", num);
 		for(i=0; i<num; i++)//复杂版的scanf	XD 
@@ -38,6 +39,7 @@ int main()//主函数
 		//from Amekiri
 		char ct;
 		printf("\n您是否还要继续？(Y/N)");
+		rewind(stdin);
 		ct = getchar();
 		if(ct == 'y' || ct == 'Y');
 		else if(ct == 'n' || ct == 'N')
