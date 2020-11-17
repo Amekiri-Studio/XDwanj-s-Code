@@ -15,7 +15,7 @@ int main() //主函数
 {
 	while (1)	//人机交互（死循环 XD） 
 	{
-			int i, j, l;	//定义 
+		int i, j, l;	//定义 
 		
 		printf("请输入两个数，用以判断其中的最大公约数：");
 		scanf("%d %d", &i, &j);
