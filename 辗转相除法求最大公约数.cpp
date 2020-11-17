@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//from Amekiri
 void Max(int &a, int &b)	//判断两个数值谁更大，并将更大的数值放在前面 
 {
 	int t;
