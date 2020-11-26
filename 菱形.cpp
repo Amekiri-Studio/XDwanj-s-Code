@@ -4,7 +4,6 @@ int main(void)
 {
 	int i, j;
 	int val;
-	int num;
 	
 	printf("请输入一个奇数，用于形成菱形："); 
 	scanf("%d", &val);
