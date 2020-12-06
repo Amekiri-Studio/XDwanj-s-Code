@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int swap(int &i, int &j)//对两个数进行交换位置的函数 
+int swap(int * i, int * j)//对两个数进行交换位置的函数 
 {
 	int t;//交换参数 
 	
-	t = i;
-	i = j;
-	j = t;
+	t = *i;
+	*i = *j;
+	*j = t;
 }
 
 int main()//主函数 
@@ -30,7 +30,7 @@ int main()//主函数
 		for(i=0; i<num; i++)//进行冒泡排序的基数 
 			for(j=0; j<(num - 1); j++)//对判断交换的变量进行"向右平移" 
 				if(a[j] > a[j+1])//判断 
-					swap(a[j], a[j+1]);//交换 
+					swap(&a[j], &a[j+1]);//交换 
 		
 	
 		for(i=0; i<num; i++)//复杂版printf	   XD 
