@@ -2,23 +2,21 @@ public class quadratic_equation
 {
     public static void main(String[] args)
     {
-        A aa = new A(2, 3, 1);//¹¹Ôìº¯ÊıÎª±äÁ¿¸³Öµ
-        aa.show_1();//Çódelta
+        A aa = new A(2, 3, 1);//æ„é€ å‡½æ•°ä¸ºå˜é‡èµ‹å€¼
+        aa.show_1();//æ±‚delta
 
         if (aa.show_2())
         {
             if (aa.show_1() == 0)
-                System.out.println(aa.show_3());//Êä³öÒ»¸ö½â¾Í¹»ÁË
+                System.out.println(aa.show_3());//è¾“å‡ºä¸€ä¸ªè§£å°±å¤Ÿäº†
             else
             {
-                System.out.println(aa.show_3());//·Ö±ğÊäÈëÁ½¸ö½â
+                System.out.println(aa.show_3());//åˆ†åˆ«è¾“å…¥ä¸¤ä¸ªè§£
                 System.out.println(aa.show_4());
             }
         }
         else 
-        {
-            System.out.println("´Ë·½³ÌÎŞ½â");//Êä³öÎŞ½âµÄ½á¹û
-        }
+            System.out.println("æ­¤æ–¹ç¨‹æ— è§£");//è¾“å‡ºæ— è§£çš„ç»“æœ
     }
 }
 
@@ -29,31 +27,31 @@ class A
     public double c;
     public double delta;
     
-    public A(double a, double b, double c)//¹¹Ôìº¯Êı
+    public A(double a, double b, double c)//æ„é€ å‡½æ•°
     {
         this.a = a;
         this.b = b;
         this.c = c;
     }
 
-    public double show_1()//Çódelta
+    public double show_1()//æ±‚delta
     {
         return delta = b*b - 4*a*c;
     }
 
-    public boolean show_2()//ÅĞ¶Ï½âµÄ¸öÊı
+    public boolean show_2()//åˆ¤æ–­è§£çš„ä¸ªæ•°
     {
         if (delta >= 0)
-            return true;//¶à¸ö½â·µ»ØÕæ
+            return true;//å¤šä¸ªè§£è¿”å›çœŸ
         else
-            return false;//ÎŞ½â·µ»Ø¼Ù
+            return false;//æ— è§£è¿”å›å‡
     }
 
-    public double show_3()//·µ»ØµÚÒ»¸ö½â
+    public double show_3()//è¿”å›ç¬¬ä¸€ä¸ªè§£
     {
         return (-b + Math.sqrt(delta) / 2*a);
     }
-    public double show_4()//·µ»ØµÚ¶ş¸ö½â
+    public double show_4()//è¿”å›ç¬¬äºŒä¸ªè§£
     {
         return (-b - Math.sqrt(delta) / 2*a);
     }
